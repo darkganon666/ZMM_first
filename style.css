@@ -172,6 +172,10 @@ h3 {
     align-items: center;
 }
 
+.chido {
+    color: pink;
+}
+
 .price p {
     font-size: 17px;
     color: #ff5a2c;
