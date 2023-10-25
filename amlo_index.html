@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina de amlo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="amlo_style.css">
 
 </head>
 
 <body>
+    <div class="contenedor">
+        <article class="blanco" class="principal">
+
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">ZMM</a>
@@ -32,13 +36,20 @@
   
     <main class="product container">
         <h1>QUIEN ES? </h1>
+        <div class="sombra">
         <h3>el mejor presidente del mundo que nos da becas a todos en el mundo cabeza de algodon, el que saco a peñabot de la jugada,salvando a si a mexico del colapso salvadondo al mundo,aqui una foto de el: </h3>
-       <div class="product-1">
+        
+        <div class="separado">
         <img src="images/amlo_fuerte.jpg" alt="">
     </div>
-    
-    <video src="images/AMLO persigue a una paloma por calles de Guanajuato.mp4"></video>
-        
+    </div>
+</br>
+<div class="video-content">
+    <div class="titulo">
+    <h1>VIDEO SOBRE EL</h1>
+</div>
+    <video src="images/AMLO persigue a una paloma por calles de Guanajuato.mp4" controls ></video>
+</div>  
        
         <h2>todos los servicios</h2>
         <div class="product-content">
@@ -48,7 +59,7 @@
                     <h3>solo amigos </h3>
                      <div class="price">
                      <p>$200 c/h</p>
-                     <a href="#" class="btn-2">comprar</a>
+                     <button class="btn-abrir-popup" id="btn-abrir-popup"><h4>comprar</h4></button>
                   </div>
              </div>
           </div>
@@ -59,7 +70,7 @@
                    <h3>amantes </h3>
                     <div class="price">
                     <p>$500 c/h</p>
-                    <a href="#" class="btn-2">comprar</a>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup"><h4>comprar</h4></button>
                  </div>
             </div>
          </div>
@@ -70,7 +81,7 @@
                    <h3>novios</h3>
                     <div class="price">
                     <p>$1000 el dia</p>
-                    <a href="#" class="btn-2">comprar</a>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup"><h4>comprar</h4></button>
                  </div>
             </div>
          </div>
@@ -81,7 +92,7 @@
                    <h3>sesion de fotos</h3>
                     <div class="price">
                     <p>$300 </p>
-                    <a href="#" class="btn-2">comprar</a>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup"><h4>comprar</h4></button>
                  </div>
             </div>
          </div>
@@ -92,7 +103,7 @@
                    <h3>baile privado</h3>
                     <div class="price">
                     <p>$500</p>
-                    <a href="#" class="btn-2">comprar</a>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup"><h4>comprar</h4></button>
                  </div>
             </div>
          </div>
@@ -103,7 +114,7 @@
                    <h3>asuntos especiales</h3>
                     <div class="price">
                     <p>$2000</p>
-                    <a href="#" class="btn-2">comprar</a>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup"><h4>comprar</h4></button>
                  </div>
             </div>
          </div>
@@ -114,7 +125,7 @@
                    <h3>juego contigo</h3>
                     <div class="price">
                     <p>$50 por partida4</p>
-                    <a href="#" class="btn-2">comprar</a>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup"><h4>comprar</h4></button>
                  </div>
             </div>
         </div>
@@ -128,6 +139,45 @@
         </div>
     </footer>
 
+    <section class="contact container">
+        <div class="contact-content">
+            <h3>pagina inicial</h3>
+            <form>
+                <div>
+                    <a href="index.html" class="btn-1">entrar</a>
+                </div>
+                
+            </form>
+        </div>
+        <div class="contact-content">
+            <h3>ciencia</h3>
+            <form>
+                <div>
+                    <a href="#" class="btn-1">entrar</a>
+                </div>
+            </form>
+        </div>
 
+    </section>
+        </article>
+
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="bt-cerrar-popup" class="bt-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>paga</h3>
+                <h4>ingresa tus datos para continuar</h4>
+                <form action="">
+                    <div class="contenedor-inputs">
+                        <input type="text" placeholder="nombre">
+                        <input type="email" placeholder="correo">
+                        <input type="text" placeholder="tarjeta">
+                    </div>
+                
+                    <input type="submit" class="bt-submit" value="comprar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>
